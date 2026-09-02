@@ -1,0 +1,13 @@
+{
+  "name": "نگین AAC",
+  "short_name": "نگین AAC",
+  "description": "سامانه ارتباط جایگزین و افزوده برای کودکان",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f7fbfc",
+  "theme_color": "#007f8b",
+  "orientation": "portrait",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": []
+}

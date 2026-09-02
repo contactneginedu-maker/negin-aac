@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#007f8b">
+  <meta name="description" content="نگین AAC؛ سامانه ارتباط جایگزین و افزوده برای کودکان (دری و پشتو)">
+  <title>نگین AAC</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <div class="logo">💎</div>
+    <div>
+      <h1>نگین AAC</h1>
+      <p>هر کودک، یک صدا؛ هر صدا، یک نگین</p>
+    </div>
+  </div>
+  <button id="langSwitch" class="lang-btn" onclick="switchLanguage()" aria-label="تغییر زبان">
+    پښتو
+  </button>
+</header>
+
+<main class="container">
+  <section class="status-card">
+    <span id="connectionStatus">🟢 آماده</span>
+    <span>نسخه 1.1</span>
+  </section>
+
+  <section class="sentence-box">
+    <div id="sentence" class="sentence" aria-live="polite">جمله خود را بسازید</div>
+    <div class="sentence-actions">
+      <button onclick="speakSentence()" class="speak-button">🔊 پخش</button>
+      <button onclick="clearSentence()" class="clear-button">🗑️ پاک</button>
+    </div>
+  </section>
+
+  <section class="search-box">
+    <input id="searchInput" type="search" placeholder="🔎 جستجوی کلمه..." oninput="searchSymbols()" aria-label="جستجوی کلمه">
+  </section>
+
+  <section class="categories" aria-label="دسته‌بندی‌ها">
+    <button onclick="filterCategory('all')">🏠 همه</button>
+    <button onclick="filterCategory('drinks')">💧 نوشیدنی</button>
+    <button onclick="filterCategory('food')">🍎 غذا</button>
+    <button onclick="filterCategory('people')">👨‍👩‍👧 افراد</button>
+    <button onclick="filterCategory('needs')">🚻 نیازها</button>
+    <button onclick="filterCategory('feelings')">😊 احساسات</button>
+    <button onclick="filterCategory('health')">🩺 سلامت</button>
+    <button onclick="filterCategory('places')">📍 مکان‌ها</button>
+  </section>
+
+  <p class="hint">نکته: برای افزودن به علاقه‌مندی‌ها، روی کلمه دوبار لمس کنید.</p>
+
+  <section id="aacGrid" class="aac-grid" aria-label="واژه‌های ارتباطی"></section>
+
+  <section class="quick-actions">
+    <button onclick="showEmergency()">🚨 کمک فوری</button>
+    <button onclick="showFavorites()">⭐ علاقه‌مندی‌ها</button>
+    <button onclick="showRecent()">🕘 اخیر</button>
+  </section>
+</main>
+
+<footer>
+  <p>💎 مرکز آموزشی نگین</p>
+  <small>Negin AAC • دری / پښتو</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
