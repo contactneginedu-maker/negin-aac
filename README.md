@@ -1,2 +1,16 @@
-# negin-aac
-💎 Negin AAC – سامانه ارتباط جایگزین و افزوده برای کودکان، با پشتیبانی از زبان دری، RTL، Text-to-Speech و حالت آفلاین.
+💎 negin-aac
+│
+├── www/
+│   ├── index.html
+│   ├── style.css
+│   ├── app.js
+│   ├── manifest.json
+│   └── sw.js
+│
+├── .github/
+│   └── workflows/
+│       └── build-apk.yml
+│
+├── config.xml
+├── package.json
+└── README.md
